@@ -17,10 +17,10 @@ export default {
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <label class="form-check-label" for="inlineRadio1">Iscrivti alla Newsletter!</label>
         </div>
         <div class="d-flex justify-content-end my-3">
-            <button type="submit">INVIA</button>
+            <button type="submit" class="btn btn-primary">INVIA</button>
         </div>
     </form>
 </template>
