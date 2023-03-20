@@ -1,11 +1,15 @@
 <script >
+import VideogamesForm from '../components/vidoegames/VideogamesForm.vue'
 export default {
-    name: 'ContactPage'
+    name: 'ContactPage',
+    components: { VideogamesForm }
 };
 </script>
 
 <template>
-    <h1>Ciao</h1>
+    <div class="my-5 container">
+        <VideogamesForm />
+    </div>
 </template>
 
 <style scoped></style>
