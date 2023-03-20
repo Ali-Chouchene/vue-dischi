@@ -17,7 +17,7 @@ export default {
                         <a class="nav-link" href="/">
                             <h5>Home</h5>
                         </a>
-                        <a class="nav-link" aria-current="page" href="7games-page">
+                        <a class="nav-link" aria-current="page" href="/games">
                             <h5>Videogames</h5>
                         </a>
                         <a class="nav-link" href="/contact">

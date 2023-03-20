@@ -1,11 +1,13 @@
 <script >
+import GamesList from '../components/vidoegames/GamesList.vue'
 export default {
-    name: 'GamesPage'
+    name: 'GamesPage',
+    components: { GamesList }
 };
 </script>
 
 <template>
-    <h1>Ciao</h1>
+    <GamesList />
 </template>
 
 <style scoped></style>

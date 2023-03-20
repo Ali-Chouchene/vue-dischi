@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="container">
-        <h2 class="mt-3">Our New Videogames</h2>
+        <h2 class="mt-3">Our New Games</h2>
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
