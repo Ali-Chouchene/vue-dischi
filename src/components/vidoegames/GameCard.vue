@@ -45,8 +45,8 @@ export default {
     }
 
     .card-price {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
         position: absolute;
         bottom: 7px;
         left: 5px;
@@ -55,7 +55,7 @@ export default {
         border-radius: 50%;
         padding: 8px 2px;
         display: block;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: bold;
         display: flex;
         justify-content: center;
