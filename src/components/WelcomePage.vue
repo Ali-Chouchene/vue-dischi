@@ -14,7 +14,8 @@ export default {
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div v-for="game in store.games" class="carousel-item active">
-                    <img :src="game.image" class="d-block w-100" alt="...">
+                    <img v-if="game.image" :src="game.image" class="img-fluid" :alt="game.slug">
+                    <img v-else src='https://marcolanci.it/utils/placeholder.jpg' class="img-fluid" :alt="game.slug">
                 </div>
             </div>
         </div>
