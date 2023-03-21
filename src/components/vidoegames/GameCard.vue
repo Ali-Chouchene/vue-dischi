@@ -8,7 +8,7 @@ export default {
 <template>
     <div class="card h-100">
         <img v-if="game.image" :src="game.image" class="card-img-top" :alt="game.slug">
-        <img v-else src='https://marcolanci.it/utils/placeholder.jpg' :alt="game.slug">
+        <img v-else src='https://marcolanci.it/utils/placeholder.jpg' class="card-img-top" :alt="game.slug">
         <div class="card-body m-0 p-0">
             <h5 class="card-title">{{ game.title }}</h5>
             <!-- <p class="card-text">{{ game.description }}</p> -->
@@ -42,6 +42,7 @@ export default {
         position: absolute;
         bottom: -15px;
         right: -15px;
+        box-shadow: 7px 5px 13px 0px rgba(0, 0, 0, 0.61);
     }
 
     .card-price {
@@ -60,9 +61,11 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.534);
 
         &:hover {
             background-color: rgb(17, 0, 255);
+
         }
 
 
