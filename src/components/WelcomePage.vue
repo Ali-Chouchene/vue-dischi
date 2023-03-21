@@ -1,32 +1,22 @@
 <script >
+import { store } from '../data/store.js'
 export default {
-    name: 'WelcomePage'
-};
+    name: 'WelcomePage',
+    data: () => ({
+        store
+    }),
+}
 </script>
 
 <template>
     <div class="container">
-        <h2 class="mt-3">Our New Games</h2>
+        <h2 class="mt-3 text-center">Our New Games</h2>
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="http://via.placeholder.com/600x300" class="d-block img-fluid w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="http://via.placeholder.com/600x300" class="d-block img-fluid w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="http://via.placeholder.com/600x300" class="d-block img-fluid w-100" alt="...">
+                <div v-for="game in store.games" class="carousel-item active">
+                    <img :src="game.image" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 </template>
