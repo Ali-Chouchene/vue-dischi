@@ -8,19 +8,27 @@ export default {
     <header class="bg-body-tertiary">
         <div class="container py-2">
             <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <a class="nav-link d-lg-none" href="/">
+                    <img class="page-icon img-fluid rounded"
+                        src="https://img.freepik.com/premium-vector/video-game-shop-logo_1056-48.jpg?w=50" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="/">
+                        <a class="nav-link d-none d-lg-block" href="/">
+                            <img class="page-icon img-fluid rounded"
+                                src="https://img.freepik.com/premium-vector/video-game-shop-logo_1056-48.jpg?w=50" alt="">
+                        </a>
+                        <a class="nav-link d-flex align-items-center" href="/">
                             <h5>Home</h5>
                         </a>
-                        <a class="nav-link" aria-current="page" href="/games">
+                        <a class="nav-link d-flex align-items-center" aria-current="page" href="/games">
                             <h5>Videogames</h5>
                         </a>
-                        <a class="nav-link" href="/contact">
+                        <a class="nav-link d-flex align-items-center" href="/contact">
                             <h5>Contact</h5>
                         </a>
                     </div>
@@ -36,7 +44,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 
 }
 </style>

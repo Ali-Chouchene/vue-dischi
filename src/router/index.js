@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from '../pages/HomePage.vue';
 import GamesPage from '../pages/GamesPage.vue';
 import ContactPage from '../pages/ContactPage.vue';
+import GameDetail from '../pages/GameDetail.vue';
 
 // ROUTES
 
@@ -13,6 +14,7 @@ const router = createRouter({
         { path: '/', name: 'home', component: HomePage },
         { path: '/games', name: 'games', component: GamesPage },
         { path: '/contact', name: 'contact_page', component: ContactPage },
+        { path: '/games/:id', name: 'game-detail', component: GameDetail },
     ]
 });
 
