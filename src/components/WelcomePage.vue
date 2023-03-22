@@ -12,11 +12,17 @@ export default {
     <div class="container">
         <h2 class="mt-3 test text-center">Our New Games</h2>
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
             <div class="carousel-inner">
+
                 <div v-for="game in store.games" class="carousel-item active">
-                    <img v-if="game.image" :src="game.image" class="img-fluid" :alt="game.slug">
-                    <img v-else src='https://marcolanci.it/utils/placeholder.jpg' class="img-fluid" :alt="game.slug">
+                    <router-link :to="{ name: 'game-detail', params: { slug: game.slug } }">
+                        <img v-if="game.image" :src="game.image" class="img-fluid" :alt="game.slug">
+                        <img v-else src='https://marcolanci.it/utils/placeholder.jpg' class="img-fluid" :alt="game.slug">
+                    </router-link>
+
                 </div>
+
             </div>
         </div>
     </div>
