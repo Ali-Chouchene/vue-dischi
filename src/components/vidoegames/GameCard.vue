@@ -13,7 +13,7 @@ export default {
             <div class="card-body m-0 p-0">
                 <h5 class="card-title">{{ game.title }}</h5>
                 <!-- <p class="card-text">{{ game.description }}</p> -->
-                <span class="card-price">{{ game.price }}</span>
+                <span class="card-price">€ {{ game.price }}</span>
                 <!-- <a id="card-button" href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
