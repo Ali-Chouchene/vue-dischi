@@ -23,7 +23,7 @@ export default {
 .card {
     position: relative;
     height: 240px;
-    box-shadow: 5px 2px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.249);
     border: 0;
     cursor: pointer;
 
@@ -49,6 +49,8 @@ export default {
         bottom: -15px;
         right: -15px;
         box-shadow: 7px 5px 13px 0px rgba(0, 0, 0, 0.61);
+
+
     }
 
     .card-price {
@@ -68,14 +70,27 @@ export default {
         justify-content: center;
         align-items: center;
         box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.534);
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
 img {
     height: 100%;
     object-fit: cover;
+    transition: all 0.2s ease-in-out;
+
+
     // width: 450px;
+    &:hover {
+        transform: scale(1.05);
+        filter: grayscale(1);
+    }
 }
+
+
 
 h5 {
     // background-color: rgba(0, 0, 0, 0.507);

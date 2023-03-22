@@ -10,6 +10,8 @@ import GameDetail from '../pages/GameDetail.vue';
 
 const router = createRouter({
     history: createWebHistory(),
+      linkActiveClass:'active',
+    linkExactActiveClass:'active',
     routes: [
         { path: '/', name: 'home', component: HomePage },
         { path: '/games', name: 'games', component: GamesPage },

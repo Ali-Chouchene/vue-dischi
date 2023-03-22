@@ -22,15 +22,15 @@ export default {
                             <img class="page-icon img-fluid rounded"
                                 src="https://img.freepik.com/premium-vector/video-game-shop-logo_1056-48.jpg?w=50" alt="">
                         </a>
-                        <a class="nav-link d-flex align-items-center" href="/">
-                            <h5>Home</h5>
-                        </a>
-                        <a class="nav-link d-flex align-items-center" aria-current="page" href="/games">
-                            <h5>Videogames</h5>
-                        </a>
-                        <a class="nav-link d-flex align-items-center" href="/contact">
-                            <h5>Contact</h5>
-                        </a>
+                        <router-link :to="{ name: 'home' }" class="text nav-link d-flex align-items-center">
+                            Home
+                        </router-link>
+                        <router-link :to="{ name: 'games' }" class="text nav-link d-flex align-items-center">
+                            Videogames
+                        </router-link>
+                        <router-link :to="{ name: 'contact_page' }" class="text nav-link d-flex align-items-center">
+                            Contact
+                        </router-link>
                     </div>
                 </div>
             </nav>
@@ -38,7 +38,7 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 header {
     position: sticky;
     top: 0;
@@ -46,5 +46,22 @@ header {
     right: 0;
     z-index: 2;
 
+    .text {
+        text-transform: uppercase;
+
+        &:hover {
+            text-shadow: 0 0 1px rgba(255, 0, 0, 0.444);
+        }
+    }
+}
+
+
+img {
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 </style>
