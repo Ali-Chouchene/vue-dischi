@@ -10,7 +10,7 @@ export default {
 
 <template>
     <div class="container">
-        <h2 class="mt-3 text-center">Our New Games</h2>
+        <h2 class="mt-3 test text-center">Our New Games</h2>
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div v-for="game in store.games" class="carousel-item active">
@@ -41,6 +41,28 @@ export default {
     img {
         width: 100%;
         height: 100%;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+}
+
+.test {
+
+    background-image: linear-gradient(to right, #FF4136, #FFDC00, #FF851B);
+    background-size: 0% 100%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.5s ease-out;
+    text-align: center;
+
+    &:hover {
+
+        background-size: 100% 100%;
+        transition: background-size 1s ease-in-out;
+        cursor: pointer;
     }
 }
 </style>
