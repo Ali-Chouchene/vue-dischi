@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <router-link :to="{ name: 'game-detail', params: { id: game.id } }">
+    <router-link :to="{ name: 'game-detail', params: { slug: game.slug } }">
         <div class="card h-100">
             <img v-if="game.image" :src="game.image" class="rounded" :alt="game.slug">
             <img v-else src='https://marcolanci.it/utils/placeholder.jpg' class="rounded" :alt="game.slug">
