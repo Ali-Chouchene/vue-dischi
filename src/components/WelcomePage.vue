@@ -13,10 +13,10 @@ export default {
         <h2 class="mt-3 test text-center">Our New Games</h2>
 
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
+        <div id="carouselExample" class="carousel slide ">
+            <div class="carousel-inner rounded-4">
                 <div class="carousel-item active">
-                    <img src="https://marcolanci.it/utils/placeholder.jpg" class="d-block w-100" alt="...">
+                    <img src="../../public/logo myvideogames.png" class="img-fluid" alt="MyVideoGames">
                 </div>
                 <div v-for="game in store.games" class="carousel-item ">
                     <router-link :to="{ name: 'game-detail', params: { slug: game.slug } }">
@@ -72,6 +72,16 @@ export default {
 h2 {
     text-transform: uppercase;
     text-shadow: 0 0 5px black;
+}
+
+.carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.carousel-control-prev-icon {
+    width: 60px;
+    height: 60px;
 }
 
 .test {

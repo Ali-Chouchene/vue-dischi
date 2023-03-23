@@ -13,14 +13,12 @@ export default {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="nav-link d-lg-none" href="/">
-                    <img class="page-icon img-fluid rounded"
-                        src="https://img.freepik.com/premium-vector/video-game-shop-logo_1056-48.jpg?w=50" alt="">
+                    <img class="page-icon img-fluid rounded" src="../../public/logo myvideogames.png" alt="">
                 </a>
                 <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-nav">
                         <a class="nav-link d-none d-lg-block" href="/">
-                            <img class="page-icon img-fluid rounded"
-                                src="https://img.freepik.com/premium-vector/video-game-shop-logo_1056-48.jpg?w=50" alt="">
+                            <img class="page-icon img-fluid rounded" src="../../public/logo myvideogames.png" alt="">
                         </a>
                         <router-link :to="{ name: 'home' }" class="text nav-link d-flex align-items-center">
                             Home
@@ -55,8 +53,14 @@ header {
     }
 }
 
+.page-icon {
+    width: 50px;
+    height: 50px;
+}
 
 img {
+
+
 
     transition: all 0.2s ease-in-out;
 
