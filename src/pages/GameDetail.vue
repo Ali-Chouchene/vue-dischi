@@ -29,6 +29,7 @@ export default {
         <div class="jumbo">
             <img class="img-fluid d-none d-md-block" :src="game.image" :alt="game.slug">
         </div>
+        <div class="test"></div>
         <div class="container d-flex justify-content-center">
             <div class="card-body py-5">
                 <div class="card-info px-5">
@@ -60,12 +61,18 @@ export default {
 </template>
 <style lang="scss" scoped>
 .detail-page {
+    height: 100vh;
     position: sticky;
     left: 0;
     right: 0;
     top: 0;
     z-index: 1;
     margin-bottom: 3rem;
+}
+
+.test {
+    height: 400px;
+    width: 100%;
 }
 
 .jumbo {
