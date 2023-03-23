@@ -11,24 +11,44 @@ export default {
 <template>
     <div class="container">
         <h2 class="mt-3 test text-center">Our New Games</h2>
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
 
-            <div class="carousel-inner rounded-5">
 
-                <div v-for="game in store.games" class="carousel-item active">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://marcolanci.it/utils/placeholder.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div v-for="game in store.games" class="carousel-item ">
                     <router-link :to="{ name: 'game-detail', params: { slug: game.slug } }">
                         <img v-if="game.image" :src="game.image" class="img-fluid" :alt="game.slug">
                         <img v-else src='https://marcolanci.it/utils/placeholder.jpg' class="img-fluid " :alt="game.slug">
                     </router-link>
                 </div>
-
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
+
+
+
+
+
+
+
+
+
     </div>
 </template>
 
 <style lang="scss" scoped>
-#carousel {
+#carouselExample {
     height: 650px;
     width: 100%;
     margin: 2rem 0;
