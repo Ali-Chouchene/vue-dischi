@@ -41,7 +41,6 @@ export default {
                         <p class="">{{ game.description }}</p>
                     </div>
                     <div class="game-price mt-2">
-                        <h4>Acquista Ora</h4>
                         <div class="d-flex mt-3">
                             <h2>€ {{ game.price }}</h2>
                             <div class="btn btn-custom ms-3"><i class="fa-solid fa-bag-shopping me-2"
@@ -50,7 +49,12 @@ export default {
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-end align-items-center me-2">
+                    <router-link class="btn btn-primary" :to="{ name: 'games' }"><i
+                            class="fa-regular fa-lg fa-hand-point-left fa-fade" style="color: #ffffff;"></i></router-link>
+                </div>
             </div>
+
         </div>
     </div>
 </template>
